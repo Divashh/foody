@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cuisine({ cuisine, onSelectDish }) {
+function Cuisine({ cuisine, onSelectDish, onBack }) {
   const dishes = {
     Italian: ["Pasta Carbonara", "Margherita Pizza", "Tiramisu"],
     Indian: ["Butter Chicken", "Paneer Tikka", "Biryani"],
@@ -9,6 +9,7 @@ function Cuisine({ cuisine, onSelectDish }) {
 
   return (
     <div className="cuisine">
+      <button onClick={onBack} className="back-btn">⬅ Back</button>
       <h2>{cuisine} Dishes</h2>
       <div className="dish-list">
         {dishes[cuisine]?.map((dish) => (

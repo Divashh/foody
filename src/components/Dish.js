@@ -1,6 +1,6 @@
 import React from "react";
 
-function Dish({ dish }) {
+function Dish({ dish, onBack }) {
   const recipes = {
     "Pasta Carbonara": {
       ingredients: ["Spaghetti", "Eggs", "Pancetta", "Parmesan", "Pepper"],
@@ -26,6 +26,7 @@ function Dish({ dish }) {
 
   return (
     <div className="dish">
+      <button onClick={onBack} className="back-btn">⬅ Back</button>
       <h2>{dish}</h2>
       {recipe ? (
         <>

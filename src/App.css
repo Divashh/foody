@@ -23,3 +23,17 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.back-btn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: #ccc;
+}
